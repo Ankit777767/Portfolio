@@ -2,7 +2,7 @@
 
 A modern, cinematic developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. Inspired by the atmosphere of classic movie theaters, it showcases my software engineering, AI/ML, and data science projects with a unique film-inspired design.
 
-🌐 **Live Demo:** https://portfolio3212.vercel.app/
+🌐 **Live Demo:** https://portfolio-8hz92xluj-ankit-ai-portfolio.vercel.app/
 
 ---
 
