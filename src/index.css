@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  /* -- Color: dark cinematic / marquee palette -- */
+  --color-void: #0b0b0d;       /* base background - near-black, warm undertone */
+  --color-charcoal: #151318;   /* elevated surface / cards */
+  --color-velvet: #6e1423;     /* curtain crimson - secondary accent */
+  --color-velvet-deep: #430c17;
+  --color-marquee: #e8b84b;    /* marquee bulb gold - primary accent */
+  --color-marquee-dim: #a3822f;
+  --color-spotlight: #f3ecdd;  /* warm off-white - headline text */
+  --color-ash: #948c7e;        /* muted warm grey - body / secondary text */
+  --color-ash-dim: #5c584f;
+
+  /* -- Type -- */
+  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-script: "Courier Prime", "Courier New", monospace;
+
+  /* -- Motion -- */
+  --ease-marquee: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    scrollbar-color: var(--color-marquee-dim) var(--color-void);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-spotlight);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-marquee);
+    color: var(--color-void);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-marquee);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Film grain overlay - subtle, fixed, sits above background below content */
+  .film-grain {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@keyframes bulb-chase {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes spotlight-sweep {
+  0% { transform: translateX(-30%) rotate(8deg); opacity: 0.5; }
+  50% { transform: translateX(30%) rotate(8deg); opacity: 0.8; }
+  100% { transform: translateX(-30%) rotate(8deg); opacity: 0.5; }
+}
+
+.animate-bulb-chase { animation: bulb-chase 1.6s ease-in-out infinite; }
+.animate-marquee { animation: marquee-scroll 34s linear infinite; }
+.animate-spotlight { animation: spotlight-sweep 12s ease-in-out infinite; }
