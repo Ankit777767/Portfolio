@@ -1,70 +1,153 @@
-# Ankit — Portfolio
+# 🎬 Ankit Portfolio
 
-A personal portfolio site with a dark, cinematic "movie marquee" identity —
-built to show off software engineering and data science projects alongside
-a genuine love of film.
+A modern, cinematic developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. Inspired by the atmosphere of classic movie theaters, it showcases my software engineering, AI/ML, and data science projects with a unique film-inspired design.
 
-**Live site:** _add your deployed URL here once you've shipped it_
+🌐 **Live Demo:** https://portfolio3212.vercel.app/
 
-## Features
+---
 
-- Marquee-style hero with chasing bulb lights and an ambient spotlight sweep
-- Scrolling cinema-ticker of short movie quotes
-- Featured work section for your strongest projects, with a secondary grid for the rest
-- A "Cast & Influences" section for the actors/directors that shape your taste
-- Film-strip section dividers (the site's signature motif — structured like acts of a film)
-- Fully responsive, keyboard-accessible, and respects `prefers-reduced-motion`
+## ✨ Features
 
-## Tech stack
+- 🎥 Cinematic hero section with marquee lights and spotlight animation
+- 🎞️ Scrolling movie quote ticker
+- 💼 Featured projects and additional project showcase
+- 🎭 Cast & Influences section featuring favorite actors and directors
+- 🎬 Film-strip section dividers for a movie-inspired experience
+- 📱 Fully responsive across devices
+- ♿ Keyboard accessible and supports `prefers-reduced-motion`
 
-| Layer      | Choice                                   |
-| ---------- | ----------------------------------------- |
-| Build tool | [Vite](https://vite.dev)                  |
-| Framework  | [React 19](https://react.dev)             |
-| Styling    | [Tailwind CSS v4](https://tailwindcss.com) (CSS-first `@theme` config) |
-| Animation  | [Motion](https://motion.dev) (formerly Framer Motion) |
-| Icons      | [lucide-react](https://lucide.dev)        |
-| Hosting    | [Vercel](https://vercel.com) (free tier)  |
+---
 
-## Getting started
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | React 19 |
+| Build Tool | Vite |
+| Styling | Tailwind CSS v4 |
+| Animation | Motion (Framer Motion) |
+| Icons | Lucide React |
+| Hosting | Vercel |
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Ankit777767/Portfolio.git
+cd Portfolio
+```
+
+### Install dependencies
 
 ```bash
 npm install
-npm run dev       # starts a dev server at http://localhost:5173
 ```
+
+### Start the development server
 
 ```bash
-npm run build      # production build → dist/
-npm run preview    # serve the production build locally
+npm run dev
 ```
 
-## Customizing this for yourself
+The application will be available at:
 
-Everything personal lives in `src/data/` — you shouldn't need to touch a
-component file just to update content:
+```
+http://localhost:5173
+```
 
-| File                     | What it controls                                  |
-| ------------------------ | --------------------------------------------------- |
-| `src/data/profile.js`    | Your name, bio, education, contact info, resume link |
-| `src/data/projects.js`   | Featured + secondary project cards                   |
-| `src/data/quotes.js`     | The scrolling quote ticker                           |
-| `src/data/influences.js` | The "Cast & Influences" section                      |
-| `src/data/skills.js`     | Grouped skill tags                                   |
+---
 
-Search the codebase for `TODO` to find every placeholder that still needs a
-real value (email, resume PDF, GitHub/LinkedIn URLs, project links).
+## 📦 Production Build
 
-To add your resume, drop a PDF into `public/` (e.g. `public/resume.pdf`) and
-make sure `resumeUrl` in `profile.js` points to it.
+Build the project:
 
-## Deployment (Vercel, free)
+```bash
+npm run build
+```
 
-1. Push this repo to GitHub (see below).
-2. Go to [vercel.com](https://vercel.com) → **Add New Project** → import the repo.
-3. Vercel auto-detects Vite; leave the defaults (`npm run build`, output `dist`).
-4. Click **Deploy**. You'll get a live `*.vercel.app` URL in about a minute.
-5. Every future push to `main` auto-deploys — no extra config needed.
+Preview the production build locally:
 
-## License
+```bash
+npm run preview
+```
 
-MIT — see [LICENSE](./LICENSE). Use this as a starting point for your own site.
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+├── data/
+│   ├── profile.js
+│   ├── projects.js
+│   ├── quotes.js
+│   ├── influences.js
+│   └── skills.js
+├── pages/
+├── assets/
+└── App.jsx
+```
+
+---
+
+## ✏️ Customization
+
+Most personal information is stored inside `src/data/`.
+
+| File | Purpose |
+|------|---------|
+| `profile.js` | Personal information, education, contact details, resume |
+| `projects.js` | Featured and additional projects |
+| `quotes.js` | Movie quote ticker |
+| `influences.js` | Favorite actors and directors |
+| `skills.js` | Technical skills |
+
+Search the project for `TODO` to quickly locate placeholders such as:
+
+- Email
+- Resume
+- GitHub
+- LinkedIn
+- Project links
+
+To add your resume:
+
+1. Place your PDF inside `public/`
+2. Update `resumeUrl` inside `profile.js`
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **Vercel**.
+
+Live Website:
+https://portfolio3212.vercel.app/
+
+To deploy your own version:
+
+1. Fork or clone this repository.
+2. Push it to GitHub.
+3. Import the repository into Vercel.
+4. Click **Deploy**.
+5. Every push to the `main` branch automatically triggers a new deployment.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👤 Author
+
+**Ankit Kumar**
+
+- Portfolio: https://portfolio3212.vercel.app/
+- GitHub: https://github.com/Ankit777767
+- LinkedIn: https://www.linkedin.com/in/ankit-kumar-733160283/

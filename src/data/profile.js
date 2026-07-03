@@ -5,13 +5,13 @@
 
 export const profile = {
   firstName: "Ankit",
-  lastName: "", // TODO: add your surname — shown next to "Ankit" in the hero
-  role: "Software Engineer · Data Scientist",
+  lastName: "Kumar", // TODO: add your surname — shown next to "Ankit" in the hero
+  role: "ML Engineer · Data Scientist",
   location: "Surat, India",
   tagline: "Engineering intelligent systems. Studying the craft of film.",
   slugline: "INT. PORTFOLIO — CONTINUOUS",
 
-  bio: `Third-year Electrical Engineering student at SVNIT Surat, building toward
+  bio: `Final year Electrical Engineering student at SVNIT Surat, building toward
   Software Engineer and Data Scientist roles. My projects sit at the
   intersection of applied ML and full-stack systems — retrieval-augmented
   recommenders, agentic pipelines, and dashboards that turn raw data into
@@ -26,12 +26,12 @@ export const profile = {
     detail: "CGPA: 8.45",
   },
 
-  email: "your.email@example.com", // TODO
-  phone: "", // TODO (optional — leave blank to hide)
-  resumeUrl: "/resume.pdf", // TODO: drop your resume PDF into /public and update this path
+  email: "ankitkumar735226@gmail.com", // TODO
+  phone: "+91-7352268187", // TODO (optional — leave blank to hide)
+  resumeUrl: "https://drive.google.com/file/d/1dyY8RpoTcCTHjW9hIXQowCE88iKFsgDH/view?usp=drive_link", // TODO: drop your resume PDF into /public and update this path
   social: {
-    github: "https://github.com/your-username", // TODO
-    linkedin: "https://linkedin.com/in/your-username", // TODO
+    github: "https://github.com/Ankit777767", // TODO
+    linkedin: "https://www.linkedin.com/in/ankit-kumar-733160283/", // TODO
     twitter: "", // TODO (optional — leave blank to hide)
     letterboxd: "", // TODO (optional — a Letterboxd link fits this theme perfectly)
   },

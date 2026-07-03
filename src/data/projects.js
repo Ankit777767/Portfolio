@@ -16,7 +16,7 @@ export const featuredProjects = [
       "Groq API",
       "TMDB API",
     ],
-    year: "2025 — Present",
+    year: "June 2026 — Present",
     status: "In active development",
     links: {
       demo: "", // TODO
@@ -30,7 +30,7 @@ export const featuredProjects = [
     description:
       "Vision-Transformer research carried out during an IIT Mandi research internship, spanning generative image quality and media forensics.",
     stack: ["PyTorch", "Vision Transformers", "Computer Vision"],
-    year: "2025 — Present",
+    year: "May2025",
     status: "Ongoing",
     papers: [
       {
